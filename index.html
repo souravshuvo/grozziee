@@ -1,0 +1,2369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SIMPLIFYING PRINTING</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+
+  <body style="background-color: #fafafa">
+    <div class="container p-4">
+      <!-- Logo section -->
+
+      <div style="float: left">
+        <img src="logo.png" alt="logo" />
+        <sup
+          ><img
+            src="trademark.png"
+            alt="logo_trademark"
+            style="margin-bottom: 40px"
+        /></sup>
+      </div>
+
+      <!-- Language section -->
+
+      <div id="language-switch" style="float: right">
+        <select id="language-select">
+          <option value="english">English</option>
+          <option value="thai">Thai</option>
+          <option value="malay">Malay</option>
+        </select>
+      </div>
+
+      <!-- <div id="language-switch" style="float: right;">
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="language-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            English
+          </button>
+          <div class="dropdown-menu" aria-labelledby="language-dropdown">
+            <a class="dropdown-item" href="#" data-language="english">English</a>
+            <a class="dropdown-item" href="#" data-language="french">Français</a>
+          </div>
+        </div>
+      </div> -->
+      <!-- Banner section -->
+
+      <img
+        src="banner.png"
+        style="padding-top: 30px"
+        class="img-fluid"
+        width="100%"
+        alt="banner"
+      />
+
+      <!--All item on center-->
+
+      <div class="container pt-2 text-center">
+        <!-- Contract section -->
+
+        <h3 id="welcome-text1"></h3>
+        <h3 id="welcome-text2"></h3>
+        <div style="font-size: 20px;">
+          <i class="fa fa-envelope"></i>
+
+          <a
+            href="mailto:kenikeni@printernoble.com?subject=Subject&body=Message"
+            >kenikeni@printernoble.com</a
+          >
+        </div>
+
+        <!-- Driver download section -->
+
+        <div class="icon-container pt-2">
+          <h2>
+            <span id="Driver_Download">
+              Driver Download
+            </span>
+          <i class="fa fa-arrow-down"></i>
+        </h2>
+        </div>
+
+        <div class="row d-flex align-items-stretch mt-3">
+          <div class="col-sm-6">
+            <div class="card d-flex align-items-stretch align-items-center">
+              <img
+                src="tharmalD.png"
+                class="img-thumbnail p-3 mx-3 m-3"
+                alt="Tharmal Printer"
+              />
+              <div class="card-body">
+                <b class="card-text" id="Tharmal_printer_driver"
+                  >Tharmal printer driver</b
+                >
+                <p class="card-text" id="Applicable_Model1">
+                  Applicable Model:
+                </p>
+                <p class="card-text">
+                  TP870, TP518, GD510 <br />
+                  GZP820, TP876,TP878
+                </p>
+                <a href="app.apk" class="btn btn-primary"
+                  >Download <i class="fa fa-download"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card d-flex align-items-stretch align-items-center">
+              <img
+                src="needleD.png"
+                class="img-thumbnail mx-3 m-3"
+                alt="Dot Matrix Printer"
+              />
+              <div class="card-body">
+                <b class="card-text" id="Dot_Matrix_Printer_Driver"
+                  >Dot Matrix Printer Driver</b
+                >
+                <p class="card-text" id="Applicable_Model2">
+                  Applicable Model:
+                </p>
+                <br />
+                <p class="card-text">AK915, AK910,TD630G</p>
+                <a href="app.apk" class="btn btn-primary text-center"
+                  >Download <i class="fa fa-download"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Label softwere Download section -->
+
+        <div class="container mt-3">
+          <h2 id="Label_software_Download">
+            Label software Download <i class="fa fa-arrow-down"></i>
+          </h2>
+        </div>
+
+        <div class="row align-items-stretch mt-3">
+          <div class="align-items-stretch col-sm-3">
+            <div class="card d-flex align-items-center">
+              <img
+                src="bluetooth.png"
+                class="img-thumbnail p-3 m-3"
+                alt="bluetooth"
+              />
+              <div class="card-body">
+                <b class="card-text" id="Bluetooth_thermal_printer_app"
+                  >Bluetooth thermal printer app</b
+                >
+              </div>
+              <div
+                class="card-footer mb-2"
+                style="background-color: white; border-top: 0"
+              >
+                <a href="app.apk" class="btn btn-primary"
+                  >Download <i class="fa fa-download"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="align-items-stretch col-sm-3">
+            <div class="card d-flex align-items-center">
+              <img
+                src="android.png"
+                class="img-thumbnail p-3 m-3"
+                alt="android"
+              />
+              <div class="card-body">
+                <b class="card-text" id="label_software_for_android_system"
+                  >label software for android system</b
+                >
+              </div>
+              <div
+                class="card-footer mb-2"
+                style="background-color: white; border-top: 0"
+              >
+                <a href="app.apk" class="btn btn-primary"
+                  >Download <i class="fa fa-download"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="align-items-stretch col-sm-3">
+            <div class="card d-flex align-items-center">
+              <img src="apple.png" class="img-thumbnail p-3 m-3" alt="apple" />
+              <div class="card-body">
+                <b class="card-text" id="label_software_for_iPhone_or_ios"
+                  >label software for iPhone or ios</b
+                >
+              </div>
+              <div
+                class="card-footer mb-2"
+                style="background-color: white; border-top: 0"
+              >
+                <a href="app.apk" class="btn btn-primary"
+                  >Download <i class="fa fa-download"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="align-items-stretch col-sm-3">
+            <div class="card d-flex align-items-center">
+              <img
+                src="windows.png"
+                class="img-thumbnail p-3 m-3"
+                alt="windows"
+              />
+              <div class="card-body">
+                <b class="card-text" id="Windows_computer_label_software"
+                  >Windows computer label software</b
+                >
+              </div>
+              <div
+                class="card-footer mb-2"
+                style="background-color: white; border-top: 0"
+              >
+                <a href="app.apk" class="btn btn-primary"
+                  >Download <i class="fa fa-download"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab section -->
+
+        <div class="container mt-3">
+          <h2 id="Thermal_Printer_Video">Thermal Printer Video</h2>
+        </div>
+        <ul
+          class="nav nav-pills nav-justified"
+          style="background-color: #77acdd"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="list1_tab"
+              data-toggle="tab"
+              href="#/list1"
+              role="tab"
+              aria-controls="list1"
+              aria-selected="true"
+              > Windows 10</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="list2_tab"
+              data-toggle="tab"
+              href="#/list2"
+              role="tab"
+              aria-controls="list2"
+              aria-selected="false"
+              > Windows 11</a
+            >
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <!-- windows 10 0r list 1-->
+
+          <div
+            class="tab-pane fade show active"
+            id="list1"
+            role="tabpanel"
+            aria-labelledby="list1-tab"
+          >
+            <ul class="list-group" style="padding-left: 0">
+              <li
+                class="list-group-item"
+                style="list-style: none; text-align: left"
+              >
+                <div class="row">
+                  <div class="col-8">
+                    <h6 class="title" id="Install_Drive1">1. Install Drive</h6>
+                  </div>
+                  <div class="col-4">
+                    <i class="fa fa-play-circle"></i>
+                    <a
+                      href="#/"
+                      class="video-link btn btn-light"
+                      data-src="video3.mp4"
+                      > Play Video</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item"
+                style="list-style: none; text-align: left"
+              >
+                <div class="row">
+                  <div class="col-8">
+                    <h6 class="title" id="Cancel_Document1">
+                      2. Cancel Document
+                    </h6>
+                  </div>
+                  <div class="col-4">
+                    <i class="fa fa-play-circle"></i>
+                    <a
+                      href="#/"
+                      class="video-link btn btn-light"
+                      data-src="video4.mp4"
+                      > Play Video</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item"
+                style="list-style: none; text-align: left"
+              >
+                <div class="row">
+                  <div class="col-8">
+                    <h6 class="title" id="Change_Port1">3. Change Port</h6>
+                  </div>
+                  <div class="col-4">
+                    <i class="fa fa-play-circle"></i>
+                    <a
+                      href="#/"
+                      class="video-link btn btn-light"
+                      data-src="video5.mp4"
+                      > Play Video</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="list-group-item"
+                style="list-style: none; text-align: left"
+              >
+                <div class="row">
+                  <div class="col-8">
+                    <h6 class="title" id="Delete_Driver1">4. Delete Driver</h6>
+                  </div>
+                  <div class="col-4">
+                    <i class="fa fa-play-circle"></i>
+                    <a
+                      href="#/"
+                      class="video-link btn btn-light"
+                      data-src="video6.mp4"
+                      > Play Video</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <div id="additionalContent" style="display: none">
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Print_Offline1">
+                        5. Print Offline
+                      </h6>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video1.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Print_Unclear1">
+                        <i class="fa fa-play-circle"></i>
+                        6. Print Unclear
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video2.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Print_Pause1">7. Print Pause</h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video3.mp4">
+                         Play Video</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Registry_Instalation1">
+                        8. Registry Instalation
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video4.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_Paper_Size1">
+                        9. Adjust Paper Size
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video5.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_Printing_Density1">
+                        10. Adjust Printing Density
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video6.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_Printing_Position1">
+                        11. Adjust Printing Position
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video1.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_Printing_Speed1">
+                        12. Adjust Printing Speed
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video2.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Delete_Driver_Manually1">
+                        13. Delete Driver Manually
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video3.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_Of_Missing_Stroke1">
+                        14. Adjust Of Missing Stroke
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video4.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Restart_The_Print_Performance1">
+                        15. Restart The Print Performance
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video5.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_The_WaterMark_Density1">
+                        16. Adjust The WaterMark Density
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video6.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="User_Install_Driver_Manually1">
+                        17. User Install Driver Manually
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video1.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6
+                        class="title"
+                        id="Just_Frame_But_No_Fonts_On_The_Shipping_Label1"
+                      >
+                        18. Just Frame But No Fonts On The Shipping Label
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video2.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6
+                        class="title"
+                        id="Can't_Find_The_Port_When_Install_The_Driver_Manually1"
+                      >
+                        19. Can't Find The Port When Install The Driver Manually
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video3.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6
+                        class="title"
+                        id="Can't_Delete_The_Driver_Package_When_Delete_The_Driver_Manually1"
+                      >
+                        20. Can't Delete The Driver Package When Delete The
+                        Driver Manually
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video4.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+              </div>
+
+              <div class="d-flex justify-content-end mt-2">
+                <button class="btn btn-secondary" id="seeMoreButton">
+                  See more
+                </button>
+              </div>
+            </ul>
+          </div>
+
+          <!-- windows 11 0r list 2-->
+          <div
+            class="tab-pane fade"
+            id="list2"
+            role="tabpanel"
+            aria-labelledby="list2_tab"
+          >
+            <ul class="list-group" style="padding-left: 0">
+              <li
+                class="list-group-item"
+                style="list-style: none; text-align: left"
+              >
+                <div class="row">
+                  <div class="col-8">
+                    <h6 class="title" id="Install_Drive">1. Install Drive</h6>
+                  </div>
+                  <div class="col-4"><i class="fa fa-play-circle"></i>
+                    <a
+                      href="#/"
+                      class="video-link btn btn-light"
+                      data-src="video3.mp4"
+                      > Play Video</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item"
+                style="list-style: none; text-align: left"
+              >
+                <div class="row">
+                  <div class="col-8">
+                    <h6 class="title" id="Cancel_Document">
+                      2. Cancel Document
+                    </h6>
+                  </div>
+                  <div class="col-4"><i class="fa fa-play-circle"></i>
+                    <a
+                      href="#/"
+                      class="video-link btn btn-light"
+                      data-src="video4.mp4"
+                      > Play Video</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item"
+                style="list-style: none; text-align: left"
+              >
+                <div class="row">
+                  <div class="col-8">
+                    <h6 class="title" id="Change_Port">3. Change Port</h6>
+                  </div>
+                  <div class="col-4"><i class="fa fa-play-circle"></i>
+                    <a
+                      href="#/"
+                      class="video-link btn btn-light"
+                      data-src="video5.mp4"
+                      > Play Video</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="list-group-item"
+                style="list-style: none; text-align: left"
+              >
+                <div class="row">
+                  <div class="col-8">
+                    <h6 class="title" id="Delete_Driver">4. Delete Driver</h6>
+                  </div>
+                  <div class="col-4"><i class="fa fa-play-circle"></i>
+                    <a
+                      href="#/"
+                      class="video-link btn btn-light"
+                      data-src="video6.mp4"
+                      > Play Video</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <div id="additionalContent2" style="display: none">
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Print_Offline">5. Print Offline</h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video1.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Print_Unclear">6. Print Unclear</h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video2.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Print_Pause">7. Print Pause</h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video3.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Registry_Instalation">
+                        8. Registry Instalation
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video4.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_Paper_Size">
+                        9. Adjust Paper Size
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video5.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_Printing_Density">
+                        10. Adjust Printing Density
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video6.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_Printing_Position">
+                        11. Adjust Printing Position
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video1.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_Printing_Speed">
+                        12. Adjust Printing Speed
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video2.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Delete_Driver_Manually">
+                        13. Delete Driver Manually
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video3.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_Of_Missing_Stroke">
+                        14. Adjust Of Missing Stroke
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video4.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Restart_The_Print_Performance">
+                        15. Restart The Print Performance
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video5.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="Adjust_The_WaterMark_Density">
+                        16. Adjust The WaterMark Density
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video6.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6 class="title" id="User_Install_Driver_Manually">
+                        17. User Install Driver Manually
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video1.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6
+                        class="title"
+                        id="Just_Frame_But_No_Fonts_On_The_Shipping_Label"
+                      >
+                        18. Just Frame But No Fonts On The Shipping Label
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video2.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6
+                        class="title"
+                        id="Can't_Find_The_Port_When_Install_The_Driver_Manually"
+                      >
+                        19. Can't Find The Port When Install The Driver Manually
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video3.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="list-group-item"
+                  style="list-style: none; text-align: left"
+                >
+                  <div class="row">
+                    <div class="col-8">
+                      <h6
+                        class="title"
+                        id="Can't_Delete_The_Driver_Package_When_Delete_The_Driver_Manually"
+                      >
+                        20. Can't Delete The Driver Package When Delete The
+                        Driver Manually
+                      </h6>
+                    </div>
+                    <div class="col-4"><i class="fa fa-play-circle"></i>
+                      <a
+                        href="#/"
+                        class="video-link btn btn-light"
+                        data-src="video4.mp4"
+                        > Play Video</a
+                      >
+                    </div>
+                  </div>
+                </li>
+              </div>
+
+              <div class="d-flex justify-content-end mt-2">
+                <button class="btn btn-secondary" id="seeMoreButton2">
+                  See more
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Dot matrix printer Printer Video Section -->
+
+        <div class="container p-0">
+          <h2 id="Dot_Matrix_Printer_Video">Dot Matrix Printer Video</h2>
+
+          <ul class="list-group mt-3">
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="AK915_paper_loading_and_printing_video">
+                    1. AK915 paper loading and printing video
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video5.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="Continuous_print_settings_for_English">
+                    2. Continuous print settings for English
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video6.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="Continuous_print_settings_for_Melayu">
+                    3. Continuous print settings for Melayu
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video1.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Attendance Machine Video -->
+
+        <div class="container mt-3">
+          <h2 id="Attendance_Machine_Video">Attendance Machine Video</h2>
+        </div>
+
+        <ul class="list-group" style="padding-left: 0">
+          <li
+            class="list-group-item"
+            style="list-style: none; text-align: left"
+          >
+            <div class="row">
+              <div class="col-8">
+                <h6 class="title" id="How_to_adjust_if_cant_punch">
+                  1. How to adjust if can‘t punch
+                </h6>
+              </div>
+              <div class="col-4"><i class="fa fa-play-circle"></i>
+                <a
+                  href="#/"
+                  class="video-link btn btn-light"
+                  data-src="video2.mp4"
+                  > Play Video</a
+                >
+              </div>
+            </div>
+          </li>
+          <li
+            class="list-group-item"
+            style="list-style: none; text-align: left"
+          >
+            <div class="row">
+              <div class="col-8">
+                <h6 class="title" id="How_to_adjust_the_position">
+                  2. How to adjust the position
+                </h6>
+              </div>
+              <div class="col-4"><i class="fa fa-play-circle"></i>
+                <a
+                  href="#/"
+                  class="video-link btn btn-light"
+                  data-src="video3.mp4"
+                  > Play Video</a
+                >
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="list-group-item"
+            style="list-style: none; text-align: left"
+          >
+            <div class="row">
+              <div class="col-8">
+                <h6 class="title" id="How_to_do_if_or_E1E1_code_shows">
+                  3. How to do if “4010”or”E1E1,E2E2,E3E3,E4E4”code shows
+                </h6>
+              </div>
+              <div class="col-4"><i class="fa fa-play-circle"></i>
+                <a
+                  href="#/"
+                  class="video-link btn btn-light"
+                  data-src="video4.mp4"
+                  > Play Video</a
+                >
+              </div>
+            </div>
+          </li>
+
+          <div id="additionalContent3" style="display: none">
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6
+                    class="title"
+                    id="How_to_do_if_5002_shows_or_just_date_no_time"
+                  >
+                    4. How to do if “5002”shows or just date no time
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video5.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6
+                    class="title"
+                    id="How_to_do_if_the_screen_doesnt_light_up"
+                  >
+                    5. How to do if the screen doesn't light up
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video6.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_exchange_the_ribbon">
+                    6. How to exchange the ribbon
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video1.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_know_Front_and_back">
+                    7. How to know Front and back
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video2.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_punch_manually">
+                    8. How to punch manually
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video3.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_punch_when_Power_outage">
+                    9. How to punch when Power outage
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video4.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_reset">10. How to reset</h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video5.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_self_test">
+                    11. How to self test
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video6.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_set_the_alarm">
+                    12. How to set the alarm
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video1.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="If_no_two_colors_printing">
+                    13. If no two-colors printing
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video2.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="Introduction_of_use">
+                    14. Introduction of use
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video3.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_change_password">
+                    15. How to change password
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video4.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_set_one_attendance_shift">
+                    16. How to set one attendance shift
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video5.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_set_the_date_and_the_time">
+                    17. How to set the date and the time
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video6.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_set_three_attendance_shifts">
+                    18. How to set three attendance shifts
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video1.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item"
+              style="list-style: none; text-align: left"
+            >
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="title" id="How_to_set_two_attendance_shifts">
+                    19. How to set two attendance shifts
+                  </h6>
+                </div>
+                <div class="col-4"><i class="fa fa-play-circle"></i>
+                  <a
+                    href="#/"
+                    class="video-link btn btn-light"
+                    data-src="video1.mp4"
+                    > Play Video</a
+                  >
+                </div>
+              </div>
+            </li>
+          </div>
+
+          <div class="d-flex justify-content-end mt-2">
+            <button class="btn btn-secondary" id="seeMoreButton3">
+              See more
+            </button>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Video Opening Modal -->
+
+    <div
+      class="modal bd-example-modal-lg"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="videoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content text-center">
+          <div class="modal-header text-center">
+            <h6
+              class="modal-title text-center"
+              style="margin: 0 auto"
+              id="videoModalLabel"
+            >
+              Video
+            </h6>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <video id="video-player" controls autoplay>
+              <source src="" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const seeMoreButton = document.getElementById("seeMoreButton");
+
+    seeMoreButton.addEventListener("click", function () {
+      if (additionalContent.style.display === "none") {
+        additionalContent.style.display = "block";
+        seeMoreButton.innerHTML = "See Less";
+      } else {
+        additionalContent.style.display = "none";
+        seeMoreButton.innerHTML = "See More";
+      }
+    });
+
+    const seeMoreButton2 = document.getElementById("seeMoreButton2");
+
+    seeMoreButton2.addEventListener("click", function () {
+      if (additionalContent2.style.display === "none") {
+        additionalContent2.style.display = "block";
+        seeMoreButton2.innerHTML = "See Less";
+      } else {
+        additionalContent2.style.display = "none";
+        seeMoreButton2.innerHTML = "See More";
+      }
+    });
+
+    document.getElementById("list2_tab").onclick = function () {
+      document.getElementById("list1").classList.remove("active", "show");
+      document.getElementById("list2").classList.add("active", "show");
+      document.getElementById("list1_tab").classList.remove("active", "show");
+      document.getElementById("list2_tab").classList.add("active", "show");
+    };
+
+    document.getElementById("list1_tab").onclick = function () {
+      document.getElementById("list2").classList.remove("active", "show");
+      document.getElementById("list1").classList.add("active", "show");
+      document.getElementById("list2_tab").classList.remove("active", "show");
+      document.getElementById("list1_tab").classList.add("active", "show");
+    };
+
+    const videoLinks = document.querySelectorAll(".video-link");
+    const modal = document.getElementById("myModal");
+    const videoPlayer = document.getElementById("video-player");
+    var closeBtn1 = document.getElementsByClassName("close")[0];
+    var closeBtn2 = document.getElementsByClassName("close")[1];
+    //const videoTitle = document.getElementById("videoModalLabel");
+    //const videoOrginalTitle = document.getElementsByClassName("title")
+
+    videoLinks.forEach(function (videoLink) {
+      videoLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        const videoSrc = this.getAttribute("data-src");
+        videoPlayer.src = "videos/" + videoSrc;
+        modal.style.display = "block";
+      });
+    });
+
+    closeBtn1.addEventListener("click", function () {
+      modal.style.display = "none";
+      videoPlayer.pause();
+    });
+
+    closeBtn2.addEventListener("click", function () {
+      modal.style.display = "none";
+      videoPlayer.pause();
+    });
+
+    window.addEventListener("click", function (e) {
+      if (e.target == modal) {
+        modal.style.display = "none";
+        videoPlayer.pause();
+      }
+    });
+
+    const languageSelect = document.getElementById("language-select");
+
+    const seeMoreButton3 = document.getElementById("seeMoreButton3");
+    seeMoreButton3.addEventListener("click", function () {
+      if (additionalContent3.style.display === "none") {
+        additionalContent3.style.display = "block";
+        if(languageSelect=="thai"){
+          seeMoreButton3.innerHTML = "ดูน้อยลง";
+        }else if(languageSelect=="malay"){
+          seeMoreButton3.innerHTML = "Lihat Kurang";
+        }else seeMoreButton3.innerHTML = "See Less";
+        
+      } else {
+        additionalContent3.style.display = "none";
+        seeMoreButton3.innerHTML = "See More";
+      }
+    });
+
+    // language change
+
+    
+
+    var elementsDownload = document.getElementsByClassName("btn btn-primary");
+    var elementsPlay = document.getElementsByClassName("video-link");
+
+    const welcomeText1 = document.getElementById("welcome-text1");
+    const welcomeText2 = document.getElementById("welcome-text2");
+    const Driver_Download = document.getElementById("Driver_Download");
+    const Tharmal_printer_driver = document.getElementById(
+      "Tharmal_printer_driver"
+    );
+    const Applicable_Model1 = document.getElementById("Applicable_Model1");
+    const Dot_Matrix_Printer_Driver = document.getElementById(
+      "Dot_Matrix_Printer_Driver"
+    );
+    const Applicable_Model2 = document.getElementById("Applicable_Model2");
+    const Label_software_Download = document.getElementById(
+      "Label_software_Download"
+    );
+    const Bluetooth_thermal_printer_app = document.getElementById(
+      "Bluetooth_thermal_printer_app"
+    );
+    const label_software_for_android_system = document.getElementById(
+      "label_software_for_android_system"
+    );
+    const label_software_for_iPhone_or_ios = document.getElementById(
+      "label_software_for_iPhone_or_ios"
+    );
+    const Windows_computer_label_software = document.getElementById(
+      "Windows_computer_label_software"
+    );
+    const Thermal_Printer_Video = document.getElementById(
+      "Thermal_Printer_Video"
+    );
+    const list1_tab = document.getElementById("list1_tab");
+    const Dot_Matrix_Printer_Video = document.getElementById(
+      "Dot_Matrix_Printer_Video"
+    );
+    const list2_tab = document.getElementById("list2_tab");
+    const Attendance_Machine_Video = document.getElementById(
+      "Attendance_Machine_Video"
+    );
+
+    const Install_Drive = document.getElementById("Install_Drive");
+    const Cancel_Document = document.getElementById("Cancel_Document");
+    const Change_Port = document.getElementById("Change_Port");
+    const Delete_Driver = document.getElementById("Delete_Driver");
+    const Print_Offline = document.getElementById("Print_Offline");
+    const Print_Unclear = document.getElementById("Print_Unclear");
+    const Print_Pause = document.getElementById("Print_Pause");
+    const Registry_Instalation = document.getElementById(
+      "Registry_Instalation"
+    );
+    const Adjust_Paper_Size = document.getElementById("Adjust_Paper_Size");
+    const Adjust_Printing_Density = document.getElementById(
+      "Adjust_Printing_Density"
+    );
+    const Adjust_Printing_Speed = document.getElementById(
+      "Adjust_Printing_Speed"
+    );
+    const Delete_Driver_Manually = document.getElementById(
+      "Delete_Driver_Manually"
+    );
+    const Adjust_Of_Missing_Stroke = document.getElementById(
+      "Adjust_Of_Missing_Stroke"
+    );
+    const Restart_The_Print_Performance = document.getElementById(
+      "Restart_The_Print_Performance"
+    );
+    const Adjust_The_WaterMark_Density = document.getElementById(
+      "Adjust_The_WaterMark_Density"
+    );
+    const User_Install_Driver_Manually = document.getElementById(
+      "User_Install_Driver_Manually"
+    );
+    const Just_Frame_But_No_Fonts_On_The_Shipping_Label =
+      document.getElementById("Just_Frame_But_No_Fonts_On_The_Shipping_Label");
+    const t_Find_The_Port_When_Install_The_Driver_Manually =
+      document.getElementById(
+        "Can't_Find_The_Port_When_Install_The_Driver_Manually"
+      );
+    const t_Delete_The_Driver_Package_When_Delete_The_Driver_Manually =
+      document.getElementById(
+        "Can't_Delete_The_Driver_Package_When_Delete_The_Driver_Manually"
+      );
+
+    const Install_Drive1 = document.getElementById("Install_Drive1");
+    const Cancel_Document1 = document.getElementById("Cancel_Document1");
+    const Change_Port1 = document.getElementById("Change_Port1");
+    const Delete_Driver1 = document.getElementById("Delete_Driver1");
+    const Print_Offline1 = document.getElementById("Print_Offline1");
+    const Print_Unclear1 = document.getElementById("Print_Unclear1");
+    const Print_Pause1 = document.getElementById("Print_Pause1");
+    const Registry_Instalation1 = document.getElementById(
+      "Registry_Instalation1"
+    );
+    const Adjust_Paper_Size1 = document.getElementById("Adjust_Paper_Size1");
+    const Adjust_Printing_Density1 = document.getElementById(
+      "Adjust_Printing_Density1"
+    );
+    const Adjust_Printing_Speed1 = document.getElementById(
+      "Adjust_Printing_Speed1"
+    );
+    const Delete_Driver_Manually1 = document.getElementById(
+      "Delete_Driver_Manually1"
+    );
+    const Adjust_Of_Missing_Stroke1 = document.getElementById(
+      "Adjust_Of_Missing_Stroke1"
+    );
+    const Restart_The_Print_Performance1 = document.getElementById(
+      "Restart_The_Print_Performance1"
+    );
+    const Adjust_The_WaterMark_Density1 = document.getElementById(
+      "Adjust_The_WaterMark_Density1"
+    );
+    const User_Install_Driver_Manually1 = document.getElementById(
+      "User_Install_Driver_Manually1"
+    );
+    const Just_Frame_But_No_Fonts_On_The_Shipping_Label1 =
+      document.getElementById("Just_Frame_But_No_Fonts_On_The_Shipping_Label1");
+    const t_Find_The_Port_When_Install_The_Driver_Manually1 =
+      document.getElementById(
+        "Can't_Find_The_Port_When_Install_The_Driver_Manually1"
+      );
+    const t_Delete_The_Driver_Package_When_Delete_The_Driver_Manually1 =
+      document.getElementById(
+        "Can't_Delete_The_Driver_Package_When_Delete_The_Driver_Manually1"
+      );
+
+    const AK915_paper_loading_and_printing_video = document.getElementById(
+      "AK915_paper_loading_and_printing_video"
+    );
+    const Continuous_print_settings_for_English = document.getElementById(
+      "Continuous_print_settings_for_English"
+    );
+    const Continuous_print_settings_for_Melayu = document.getElementById(
+      "Continuous_print_settings_for_Melayu"
+    );
+
+    const How_to_adjust_if_cant_punch = document.getElementById(
+      "How_to_adjust_if_cant_punch"
+    );
+    const How_to_adjust_the_position = document.getElementById(
+      "How_to_adjust_the_position"
+    );
+    const How_to_do_if_or_E1E1_code_shows = document.getElementById(
+      "How_to_do_if_or_E1E1_code_shows"
+    );
+    const How_to_do_if_5002_shows_or_just_date_no_time =
+      document.getElementById("How_to_do_if_5002_shows_or_just_date_no_time");
+    const How_to_do_if_the_screen_doesnt_light_up = document.getElementById(
+      "How_to_do_if_the_screen_doesnt_light_up"
+    );
+    const How_to_exchange_the_ribbon = document.getElementById(
+      "How_to_exchange_the_ribbon"
+    );
+    const How_to_know_Front_and_back = document.getElementById(
+      "How_to_know_Front_and_back"
+    );
+    const How_to_punch_manually = document.getElementById(
+      "How_to_punch_manually"
+    );
+    const How_to_punch_when_Power_outage = document.getElementById(
+      "How_to_punch_when_Power_outage"
+    );
+    const How_to_reset = document.getElementById("How_to_reset");
+    const How_to_self_test = document.getElementById("How_to_self_test");
+    const How_to_set_the_alarm = document.getElementById(
+      "How_to_set_the_alarm"
+    );
+    const If_no_two_colors_printing = document.getElementById(
+      "If_no_two_colors_printing"
+    );
+    const Introduction_of_use = document.getElementById("Introduction_of_use");
+    const How_to_change_password = document.getElementById(
+      "How_to_change_password"
+    );
+    const How_to_set_one_attendance_shift = document.getElementById(
+      "How_to_set_one_attendance_shift"
+    );
+    const How_to_set_the_date_and_the_time = document.getElementById(
+      "How_to_set_the_date_and_the_time"
+    );
+    const How_to_set_three_attendance_shifts = document.getElementById(
+      "How_to_set_three_attendance_shifts"
+    );
+    const How_to_set_two_attendance_shifts = document.getElementById(
+      "How_to_set_two_attendance_shifts"
+    );
+
+    // const Print_Pause = document.getElementById("Print_Pause");
+    // const Print_Pause = document.getElementById("Print_Pause");
+    // const Print_Pause = document.getElementById("Print_Pause");
+    // const Print_Pause = document.getElementById("Print_Pause");
+    // const Print_Pause = document.getElementById("Print_Pause");
+    // const Print_Pause = document.getElementById("Print_Pause");
+    // const Print_Pause = document.getElementById("Print_Pause");
+
+    let selectedLanguage = localStorage.getItem("language") || "english";
+
+    axios.get("languages.json").then((response) => {
+      const languages = response.data;
+
+      welcomeText1.textContent = languages[selectedLanguage]["welcome-text1"];
+      welcomeText2.textContent = languages[selectedLanguage]["welcome-text2"];
+      Driver_Download.textContent =
+        languages[selectedLanguage]["Driver_Download"];
+      Tharmal_printer_driver.textContent =
+        languages[selectedLanguage]["Tharmal_printer_driver"];
+      Applicable_Model1.textContent =
+        languages[selectedLanguage]["Applicable_Model1"];
+      Dot_Matrix_Printer_Driver.textContent =
+        languages[selectedLanguage]["Dot_Matrix_Printer_Driver"];
+      Label_software_Download.textContent =
+        languages[selectedLanguage]["Label_software_Download"];
+      Bluetooth_thermal_printer_app.textContent =
+        languages[selectedLanguage]["Bluetooth_thermal_printer_app"];
+      label_software_for_android_system.textContent =
+        languages[selectedLanguage]["label_software_for_android_system"];
+      label_software_for_iPhone_or_ios.textContent =
+        languages[selectedLanguage]["label_software_for_iPhone_or_ios"];
+      Windows_computer_label_software.textContent =
+        languages[selectedLanguage]["Windows_computer_label_software"];
+      Thermal_Printer_Video.textContent =
+        languages[selectedLanguage]["Thermal_Printer_Video"];
+      // list1_tab.textContent = languages[selectedLanguage]["list1_tab"];
+      Dot_Matrix_Printer_Video.textContent =
+        languages[selectedLanguage]["Dot_Matrix_Printer_Video"];
+      Applicable_Model2.textContent =
+        languages[selectedLanguage]["Applicable_Model2"];
+      //list2_tab.textContent = languages[selectedLanguage]["list2_tab"];
+      Attendance_Machine_Video.textContent =
+        languages[selectedLanguage]["Attendance_Machine_Video"];
+
+      //  video 1
+
+      Install_Drive.textContent = languages[selectedLanguage]["Install_Drive"];
+      Cancel_Document.textContent =
+        languages[selectedLanguage]["Cancel_Document"];
+      Change_Port.textContent = languages[selectedLanguage]["Change_Port"];
+      Delete_Driver.textContent = languages[selectedLanguage]["Delete_Driver"];
+      Print_Offline.textContent = languages[selectedLanguage]["Print_Offline"];
+      Print_Unclear.textContent = languages[selectedLanguage]["Print_Unclear"];
+      Print_Pause.textContent = languages[selectedLanguage]["Print_Pause"];
+      Registry_Instalation.textContent =
+        languages[selectedLanguage]["Registry_Instalation"];
+      Adjust_Paper_Size.textContent =
+        languages[selectedLanguage]["Adjust_Paper_Size"];
+      Adjust_Printing_Density.textContent =
+        languages[selectedLanguage]["Adjust_Printing_Density"];
+      Adjust_Printing_Position.textContent =
+        languages[selectedLanguage]["Adjust_Printing_Position"];
+      Adjust_Printing_Speed.textContent =
+        languages[selectedLanguage]["Adjust_Printing_Speed"];
+      Delete_Driver_Manually.textContent =
+        languages[selectedLanguage]["Delete_Driver_Manually"];
+      Adjust_Of_Missing_Stroke.textContent =
+        languages[selectedLanguage]["Adjust_Of_Missing_Stroke"];
+      Restart_The_Print_Performance.textContent =
+        languages[selectedLanguage]["Restart_The_Print_Performance"];
+      Adjust_The_WaterMark_Density.textContent =
+        languages[selectedLanguage]["Adjust_The_WaterMark_Density"];
+      User_Install_Driver_Manually.textContent =
+        languages[selectedLanguage]["User_Install_Driver_Manually"];
+      Just_Frame_But_No_Fonts_On_The_Shipping_Label.textContent =
+        languages[selectedLanguage][
+          "Just_Frame_But_No_Fonts_On_The_Shipping_Label"
+        ];
+      t_Find_The_Port_When_Install_The_Driver_Manually.textContent =
+        languages[selectedLanguage][
+          "Can't_Find_The_Port_When_Install_The_Driver_Manually"
+        ];
+      t_Delete_The_Driver_Package_When_Delete_The_Driver_Manually.textContent =
+        languages[selectedLanguage][
+          "Can't_Delete_The_Driver_Package_When_Delete_The_Driver_Manually"
+        ];
+
+      Install_Drive1.textContent =
+        languages[selectedLanguage]["Install_Drive1"];
+      Cancel_Document1.textContent =
+        languages[selectedLanguage]["Cancel_Document1"];
+      Change_Port1.textContent = languages[selectedLanguage]["Change_Port1"];
+      Delete_Driver1.textContent =
+        languages[selectedLanguage]["Delete_Driver1"];
+      Print_Offline1.textContent =
+        languages[selectedLanguage]["Print_Offline1"];
+      Print_Unclear1.textContent =
+        languages[selectedLanguage]["Print_Unclear1"];
+      Print_Pause1.textContent = languages[selectedLanguage]["Print_Pause1"];
+      Registry_Instalation1.textContent =
+        languages[selectedLanguage]["Registry_Instalation1"];
+      Adjust_Paper_Size1.textContent =
+        languages[selectedLanguage]["Adjust_Paper_Size1"];
+      Adjust_Printing_Density1.textContent =
+        languages[selectedLanguage]["Adjust_Printing_Density1"];
+      Adjust_Printing_Position1.textContent =
+        languages[selectedLanguage]["Adjust_Printing_Position1"];
+      Adjust_Printing_Speed1.textContent =
+        languages[selectedLanguage]["Adjust_Printing_Speed1"];
+      Delete_Driver_Manually1.textContent =
+        languages[selectedLanguage]["Delete_Driver_Manually1"];
+      Adjust_Of_Missing_Stroke1.textContent =
+        languages[selectedLanguage]["Adjust_Of_Missing_Stroke1"];
+      Restart_The_Print_Performance1.textContent =
+        languages[selectedLanguage]["Restart_The_Print_Performance1"];
+      Adjust_The_WaterMark_Density1.textContent =
+        languages[selectedLanguage]["Adjust_The_WaterMark_Density1"];
+      User_Install_Driver_Manually1.textContent =
+        languages[selectedLanguage]["User_Install_Driver_Manually1"];
+      Just_Frame_But_No_Fonts_On_The_Shipping_Label1.textContent =
+        languages[selectedLanguage][
+          "Just_Frame_But_No_Fonts_On_The_Shipping_Label1"
+        ];
+      t_Find_The_Port_When_Install_The_Driver_Manually1.textContent =
+        languages[selectedLanguage][
+          "Can't_Find_The_Port_When_Install_The_Driver_Manually1"
+        ];
+      t_Delete_The_Driver_Package_When_Delete_The_Driver_Manually1.textContent =
+        languages[selectedLanguage][
+          "Can't_Delete_The_Driver_Package_When_Delete_The_Driver_Manually1"
+        ];
+
+      //video 2
+
+      AK915_paper_loading_and_printing_video.textContent =
+        languages[selectedLanguage]["AK915_paper_loading_and_printing_video"];
+      Continuous_print_settings_for_English.textContent =
+        languages[selectedLanguage]["Continuous_print_settings_for_English"];
+      Continuous_print_settings_for_Melayu.textContent =
+        languages[selectedLanguage]["Continuous_print_settings_for_Melayu"];
+
+      //video 3
+
+      How_to_adjust_if_cant_punch.textContent =
+        languages[selectedLanguage]["How_to_adjust_if_cant_punch"];
+      How_to_adjust_the_position.textContent =
+        languages[selectedLanguage]["How_to_adjust_the_position"];
+      How_to_do_if_or_E1E1_code_shows.textContent =
+        languages[selectedLanguage]["How_to_do_if_or_E1E1_code_shows"];
+      How_to_do_if_5002_shows_or_just_date_no_time.textContent =
+        languages[selectedLanguage][
+          "How_to_do_if_5002_shows_or_just_date_no_time"
+        ];
+      How_to_do_if_the_screen_doesnt_light_up.textContent =
+        languages[selectedLanguage]["How_to_do_if_the_screen_doesnt_light_up"];
+      How_to_exchange_the_ribbon.textContent =
+        languages[selectedLanguage]["How_to_exchange_the_ribbon"];
+      How_to_know_Front_and_back.textContent =
+        languages[selectedLanguage]["How_to_know_Front_and_back"];
+      How_to_punch_manually.textContent =
+        languages[selectedLanguage]["How_to_punch_manually"];
+      How_to_punch_when_Power_outage.textContent =
+        languages[selectedLanguage]["How_to_punch_when_Power_outage"];
+      How_to_reset.textContent = languages[selectedLanguage]["How_to_reset"];
+      How_to_self_test.textContent =
+        languages[selectedLanguage]["How_to_self_test"];
+      How_to_set_the_alarm.textContent =
+        languages[selectedLanguage]["How_to_set_the_alarm"];
+      If_no_two_colors_printing.textContent =
+        languages[selectedLanguage]["If_no_two_colors_printing"];
+      Introduction_of_use.textContent =
+        languages[selectedLanguage]["Introduction_of_use"];
+      How_to_change_password.textContent =
+        languages[selectedLanguage]["How_to_change_password"];
+      How_to_set_one_attendance_shift.textContent =
+        languages[selectedLanguage]["How_to_set_one_attendance_shift"];
+      How_to_set_the_date_and_the_time.textContent =
+        languages[selectedLanguage]["How_to_set_the_date_and_the_time"];
+      How_to_set_three_attendance_shifts.textContent =
+        languages[selectedLanguage]["How_to_set_three_attendance_shifts"];
+      How_to_set_two_attendance_shifts.textContent =
+        languages[selectedLanguage]["How_to_set_two_attendance_shifts"];
+
+      for (var i = 0; i < elementsDownload.length; i++) {
+        elementsDownload[i].innerText =
+          languages[selectedLanguage]["download_text"];
+      }
+
+      for (var i = 0; i < elementsPlay.length; i++) {
+        elementsPlay[i].innerText = languages[selectedLanguage]["play_text"];
+      }
+
+      //  btn.textContent=languages[selectedLanguage]["idname"];
+      //  btn.textContent=languages[selectedLanguage]["idname"];
+      //  btn.textContent=languages[selectedLanguage]["idname"];
+      //  btn.textContent=languages[selectedLanguage]["idname"];
+      //  btn.textContent=languages[selectedLanguage]["idname"];
+      //  btn.textContent=languages[selectedLanguage]["idname"];
+    });
+
+    languageSelect.addEventListener("change", function () {
+      selectedLanguage = languageSelect.value;
+      localStorage.setItem("language", selectedLanguage);
+
+      axios.get("languages.json").then((response) => {
+        const languages = response.data;
+
+        for (var i = 0; i < elementsDownload.length; i++) {
+          elementsDownload[i].innerText =
+            languages[selectedLanguage]["download_text"];
+        }
+
+        for (var i = 0; i < elementsPlay.length; i++) {
+          elementsPlay[i].innerText = languages[selectedLanguage]["play_text"];
+        }
+
+        welcomeText1.textContent = languages[selectedLanguage]["welcome-text1"];
+        welcomeText2.textContent = languages[selectedLanguage]["welcome-text2"];
+        Driver_Download.textContent =
+          languages[selectedLanguage]["Driver_Download"];
+        Tharmal_printer_driver.textContent =
+          languages[selectedLanguage]["Tharmal_printer_driver"];
+        Applicable_Model1.textContent =
+          languages[selectedLanguage]["Applicable_Model1"];
+        Dot_Matrix_Printer_Driver.textContent =
+          languages[selectedLanguage]["Dot_Matrix_Printer_Driver"];
+        Label_software_Download.textContent =
+          languages[selectedLanguage]["Label_software_Download"];
+        Bluetooth_thermal_printer_app.textContent =
+          languages[selectedLanguage]["Bluetooth_thermal_printer_app"];
+        label_software_for_android_system.textContent =
+          languages[selectedLanguage]["label_software_for_android_system"];
+        label_software_for_iPhone_or_ios.textContent =
+          languages[selectedLanguage]["label_software_for_iPhone_or_ios"];
+        Windows_computer_label_software.textContent =
+          languages[selectedLanguage]["Windows_computer_label_software"];
+        Thermal_Printer_Video.textContent =
+          languages[selectedLanguage]["Thermal_Printer_Video"];
+        //list1_tab.textContent = languages[selectedLanguage]["list1-tab"];
+        Dot_Matrix_Printer_Video.textContent =
+          languages[selectedLanguage]["Dot_Matrix_Printer_Video"];
+        Applicable_Model2.textContent =
+          languages[selectedLanguage]["Applicable_Model2"];
+        Attendance_Machine_Video.textContent =
+          languages[selectedLanguage]["Attendance_Machine_Video"];
+
+        //  video 1
+
+        Install_Drive.textContent =
+          languages[selectedLanguage]["Install_Drive"];
+        Cancel_Document.textContent =
+          languages[selectedLanguage]["Cancel_Document"];
+        Change_Port.textContent = languages[selectedLanguage]["Change_Port"];
+        Delete_Driver.textContent =
+          languages[selectedLanguage]["Delete_Driver"];
+        Print_Offline.textContent =
+          languages[selectedLanguage]["Print_Offline"];
+        Print_Unclear.textContent =
+          languages[selectedLanguage]["Print_Unclear"];
+        Print_Pause.textContent = languages[selectedLanguage]["Print_Pause"];
+        Registry_Instalation.textContent =
+          languages[selectedLanguage]["Registry_Instalation"];
+        Adjust_Paper_Size.textContent =
+          languages[selectedLanguage]["Adjust_Paper_Size"];
+        Adjust_Printing_Density.textContent =
+          languages[selectedLanguage]["Adjust_Printing_Density"];
+        Adjust_Printing_Position.textContent =
+          languages[selectedLanguage]["Adjust_Printing_Position"];
+        Adjust_Printing_Speed.textContent =
+          languages[selectedLanguage]["Adjust_Printing_Speed"];
+        Delete_Driver_Manually.textContent =
+          languages[selectedLanguage]["Delete_Driver_Manually"];
+        Adjust_Of_Missing_Stroke.textContent =
+          languages[selectedLanguage]["Adjust_Of_Missing_Stroke"];
+        Restart_The_Print_Performance.textContent =
+          languages[selectedLanguage]["Restart_The_Print_Performance"];
+        Adjust_The_WaterMark_Density.textContent =
+          languages[selectedLanguage]["Adjust_The_WaterMark_Density"];
+        User_Install_Driver_Manually.textContent =
+          languages[selectedLanguage]["User_Install_Driver_Manually"];
+        Just_Frame_But_No_Fonts_On_The_Shipping_Label.textContent =
+          languages[selectedLanguage][
+            "Just_Frame_But_No_Fonts_On_The_Shipping_Label"
+          ];
+        t_Find_The_Port_When_Install_The_Driver_Manually.textContent =
+          languages[selectedLanguage][
+            "Can't_Find_The_Port_When_Install_The_Driver_Manually"
+          ];
+        t_Delete_The_Driver_Package_When_Delete_The_Driver_Manually.textContent =
+          languages[selectedLanguage][
+            "Can't_Delete_The_Driver_Package_When_Delete_The_Driver_Manually"
+          ];
+
+        Install_Drive1.textContent =
+          languages[selectedLanguage]["Install_Drive1"];
+        Cancel_Document1.textContent =
+          languages[selectedLanguage]["Cancel_Document1"];
+        Change_Port1.textContent = languages[selectedLanguage]["Change_Port1"];
+        Delete_Driver1.textContent =
+          languages[selectedLanguage]["Delete_Driver1"];
+        Print_Offline1.textContent =
+          languages[selectedLanguage]["Print_Offline1"];
+        Print_Unclear1.textContent =
+          languages[selectedLanguage]["Print_Unclear1"];
+        Print_Pause1.textContent = languages[selectedLanguage]["Print_Pause1"];
+        Registry_Instalation1.textContent =
+          languages[selectedLanguage]["Registry_Instalation1"];
+        Adjust_Paper_Size1.textContent =
+          languages[selectedLanguage]["Adjust_Paper_Size1"];
+        Adjust_Printing_Density1.textContent =
+          languages[selectedLanguage]["Adjust_Printing_Density1"];
+        Adjust_Printing_Position1.textContent =
+          languages[selectedLanguage]["Adjust_Printing_Position1"];
+        Adjust_Printing_Speed1.textContent =
+          languages[selectedLanguage]["Adjust_Printing_Speed1"];
+        Delete_Driver_Manually1.textContent =
+          languages[selectedLanguage]["Delete_Driver_Manually1"];
+        Adjust_Of_Missing_Stroke1.textContent =
+          languages[selectedLanguage]["Adjust_Of_Missing_Stroke1"];
+        Restart_The_Print_Performance1.textContent =
+          languages[selectedLanguage]["Restart_The_Print_Performance1"];
+        Adjust_The_WaterMark_Density1.textContent =
+          languages[selectedLanguage]["Adjust_The_WaterMark_Density1"];
+        User_Install_Driver_Manually1.textContent =
+          languages[selectedLanguage]["User_Install_Driver_Manually1"];
+        Just_Frame_But_No_Fonts_On_The_Shipping_Label1.textContent =
+          languages[selectedLanguage][
+            "Just_Frame_But_No_Fonts_On_The_Shipping_Label1"
+          ];
+        t_Find_The_Port_When_Install_The_Driver_Manually1.textContent =
+          languages[selectedLanguage][
+            "Can't_Find_The_Port_When_Install_The_Driver_Manually1"
+          ];
+        t_Delete_The_Driver_Package_When_Delete_The_Driver_Manually1.textContent =
+          languages[selectedLanguage][
+            "Can't_Delete_The_Driver_Package_When_Delete_The_Driver_Manually1"
+          ];
+
+        //  video 2
+
+        AK915_paper_loading_and_printing_video.textContent =
+          languages[selectedLanguage]["AK915_paper_loading_and_printing_video"];
+        Continuous_print_settings_for_English.textContent =
+          languages[selectedLanguage]["Continuous_print_settings_for_English"];
+        Continuous_print_settings_for_Melayu.textContent =
+          languages[selectedLanguage]["Continuous_print_settings_for_Melayu"];
+
+        //video 3
+
+        How_to_adjust_if_cant_punch.textContent =
+          languages[selectedLanguage]["How_to_adjust_if_cant_punch"];
+        How_to_adjust_the_position.textContent =
+          languages[selectedLanguage]["How_to_adjust_the_position"];
+        How_to_do_if_or_E1E1_code_shows.textContent =
+          languages[selectedLanguage]["How_to_do_if_or_E1E1_code_shows"];
+        How_to_do_if_5002_shows_or_just_date_no_time.textContent =
+          languages[selectedLanguage][
+            "How_to_do_if_5002_shows_or_just_date_no_time"
+          ];
+        How_to_do_if_the_screen_doesnt_light_up.textContent =
+          languages[selectedLanguage][
+            "How_to_do_if_the_screen_doesnt_light_up"
+          ];
+        How_to_exchange_the_ribbon.textContent =
+          languages[selectedLanguage]["How_to_exchange_the_ribbon"];
+        How_to_know_Front_and_back.textContent =
+          languages[selectedLanguage]["How_to_know_Front_and_back"];
+        How_to_punch_manually.textContent =
+          languages[selectedLanguage]["How_to_punch_manually"];
+        How_to_punch_when_Power_outage.textContent =
+          languages[selectedLanguage]["How_to_punch_when_Power_outage"];
+        How_to_reset.textContent = languages[selectedLanguage]["How_to_reset"];
+        How_to_self_test.textContent =
+          languages[selectedLanguage]["How_to_self_test"];
+        How_to_set_the_alarm.textContent =
+          languages[selectedLanguage]["How_to_set_the_alarm"];
+        If_no_two_colors_printing.textContent =
+          languages[selectedLanguage]["If_no_two_colors_printing"];
+        Introduction_of_use.textContent =
+          languages[selectedLanguage]["Introduction_of_use"];
+        How_to_change_password.textContent =
+          languages[selectedLanguage]["How_to_change_password"];
+        How_to_set_one_attendance_shift.textContent =
+          languages[selectedLanguage]["How_to_set_one_attendance_shift"];
+        How_to_set_the_date_and_the_time.textContent =
+          languages[selectedLanguage]["How_to_set_the_date_and_the_time"];
+        How_to_set_three_attendance_shifts.textContent =
+          languages[selectedLanguage]["How_to_set_three_attendance_shifts"];
+        How_to_set_two_attendance_shifts.textContent =
+          languages[selectedLanguage]["How_to_set_two_attendance_shifts"];
+      });
+    });
+  </script>
+</html>
