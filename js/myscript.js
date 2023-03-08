@@ -5,31 +5,31 @@ if(selectedLanguage===null){
 
 const bannerImage = document.getElementById("bannerImage");
 
-//  switch(selectedLanguage){
-//   case 'english':
-//     bannerImage.setAttribute("src", "images/englishBanner.png");
-//     break;
+ switch(selectedLanguage){
+  case 'english':
+    bannerImage.setAttribute("src", "images/englishBanner.png");
+    break;
 
-//     case 'thai':
-//       bannerImage.setAttribute("src", "images/thaiBanner.png");
-//     break;
+    case 'thai':
+      bannerImage.setAttribute("src", "images/thaiBanner.png");
+    break;
 
-//     case 'malay':
-//       bannerImage.setAttribute("src", "images/malayBanner.png");
-//     break;
+    case 'malay':
+      bannerImage.setAttribute("src", "images/malayBanner.png");
+    break;
 
-//     case 'filip':
-//       bannerImage.setAttribute("src", "images/pilipBanner.png");
-//     break;
+    case 'filip':
+      bannerImage.setAttribute("src", "images/pilipBanner.png");
+    break;
 
-//     case 'vietnam':
-//       bannerImage.setAttribute("src", "images/vietnamBanner.png");
-//     break;
+    case 'vietnam':
+      bannerImage.setAttribute("src", "images/vietnamBanner.png");
+    break;
 
-//     default:
-//       bannerImage.setAttribute("src", "images/englishBanner.png");
+    default:
+      bannerImage.setAttribute("src", "images/englishBanner.png");
 
-// }
+}
 
 var languages;
 axios.get("json/languages.json").then((response) => {
@@ -537,31 +537,31 @@ languageSelect.addEventListener("change", function () {
   selectedLanguage = languageSelect.value;
   localStorage.setItem("language", selectedLanguage);
 
-  // switch(selectedLanguage){
-  //   case 'english':
-  //     bannerImage.setAttribute("src", "images/englishBanner.png");
-  //     break;
+  switch(selectedLanguage){
+    case 'english':
+      bannerImage.setAttribute("src", "images/englishBanner.png");
+      break;
 
-  //     case 'thai':
-  //       bannerImage.setAttribute("src", "images/thaiBanner.png");
-  //     break;
+      case 'thai':
+        bannerImage.setAttribute("src", "images/thaiBanner.png");
+      break;
 
-  //     case 'malay':
-  //       bannerImage.setAttribute("src", "images/malayBanner.png");
-  //     break;
+      case 'malay':
+        bannerImage.setAttribute("src", "images/malayBanner.png");
+      break;
 
-  //     case 'filip':
-  //       bannerImage.setAttribute("src", "images/pilipBanner.png");
-  //     break;
+      case 'filip':
+        bannerImage.setAttribute("src", "images/pilipBanner.png");
+      break;
 
-  //     case 'vietnam':
-  //       bannerImage.setAttribute("src", "images/vietnamBanner.png");
-  //     break;
+      case 'vietnam':
+        bannerImage.setAttribute("src", "images/vietnamBanner.png");
+      break;
 
-  //     default:
-  //       bannerImage.setAttribute("src", "images/englishBanner.png");
+      default:
+        bannerImage.setAttribute("src", "images/englishBanner.png");
 
-  // }
+  }
 
   axios.get("json/languages.json").then((response) => {
     const languages = response.data;
