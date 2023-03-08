@@ -1,0 +1,265 @@
+:root {
+  --bs-blue: #001e90;
+
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: #dee2e6;
+  --bs-link-color: #001e90;
+  --bs-link-hover-color: #0a58ca;
+  --bs-code-color: #001e90;
+  --bs-highlight-bg: #fff3cd;
+  --bs-list-group-color: #001e90;
+  --bs-card-color: #001e90;
+}
+
+.btn-primary {
+  --bs-btn-bg: #001e90;
+}
+
+b,
+a,
+i {
+  color: #001e90;
+}
+
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* h6 {
+
+    color: #001E90;
+
+} */
+
+.banner_header {
+  font-weight: bold;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show.nav-link {
+  color: white;
+  background-color: #001e90;
+}
+
+.nav-pills .nav-link.inactive,
+.nav-pills .show.nav-link {
+  color: white;
+}
+
+.container
+  p-0
+  .list-group
+  mt-3
+  .list-group-item
+  .row
+  .col-4
+  video-link
+  btn
+  btn-light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  border-radius: 5px;
+  border: 3px, solid #fff;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container p-0 .row .col-4 video-link btn btn-light {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper {
+  height: 180px; /* Set a fixed height for the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.image-wrapper img {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .image-wrapper {
+    height: 100px; /* Set a fixed height for the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
+.myfooter {
+  padding-left: 5px;
+  float: left;
+  justify-content: end;
+}
+
+/* Banner image */
+
+
+#banner_header {
+  margin-top: 2%;
+  font-size: 5rem;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 576px) {
+
+  
+#banner_header{
+  margin-top: 2%;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+
+}
+
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  #banner_header{
+    margin-top: 2%;
+    font-size: 1.5rem;
+    letter-spacing: 0.08rem;
+  
+  }
+}
+
+#banner_p1 {
+  font-weight: lighter;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.005rem;
+  font-family: "Tahoma", sans-serif;
+}
+
+@media only screen and (max-width: 576px){
+
+  #banner_p1 {
+    
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 0.5rem;
+    letter-spacing: 0.0005rem;
+    
+  }
+
+}
+
+
+
+/* @media screen and (min-width: 480px) and (max-width: 767px) {
+
+  #banner_header {
+    font-weight: bolder;
+    margin-top: 2%;
+    font-size: 200%;
+    letter-spacing: 0.2wv;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media screen and(max-width: 479px) {
+
+  #banner_header {
+    font-weight: bolder;
+    margin-top: 2%;
+    font-size: 100%;
+    letter-spacing: 0.2wv;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+#banner_p1 {
+  font-weight: lighter;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-size: 200%;
+  letter-spacing: 0.4wv;
+  font-family: "Tahoma", sans-serif;
+}
+
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+  #banner_p1 {
+    font-weight: lighter;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-size: 100%;
+    letter-spacing:0.4wv;
+    font-family: "Tahoma", sans-serif;
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+  #banner_p1 {
+    font-weight: lighter;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-size: 50%;
+    letter-spacing:0.4wv;
+    font-family: "Tahoma", sans-serif;
+  }
+} */
+
+/* #banner_p2 {
+  margin-top: 0;
+  font-weight: lighter;
+  font-size: 150%;
+  letter-spacing: 0.1wv;
+  font-family: "Tahoma", sans-serif;
+} */
+
+/* practice */
