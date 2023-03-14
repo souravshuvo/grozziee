@@ -1,6 +1,12 @@
 {
   "english": {
     "download_text": "Download",
+
+    "banner_text" : "SIMPLIFYING PRINTING",
+    "banner_p1" :"Grozziee brand printer,in order to realize the concept of \"Symplifying Printing\"",
+    "banner_p2" : "A group of excellents engineers spent 20 years",
+
+
     "play_text": "Play Video",
     "see_more_text": "See More",
     "see_less_text": "See Less",
@@ -9,6 +15,7 @@
     "welcome-text1": "If you have any assist",
     "welcome-text2": "Please feel free to contact us",
     "Driver_Download": "Driver Download",
+
     "Tharmal_printer_driver": "Thermal printer driver",
     "Applicable_Model1": "Applicable Model",
     "Dot_Matrix_Printer_Driver": "Dot Matrix Printer Driver",
@@ -98,6 +105,11 @@
 
     "welcome-text1": "หากคุณต้องการความช่วยเหลือ",
     "welcome-text2": "โปรดติดต่อเราได้เลย",
+
+    "banner_text" : "การทำให้การพิมพ์เรียบง่ายขึ้น",
+    "banner_p1" :"เครื่องพิมพ์ยี่ห้อ Grozziee เพื่อให้เข้ากับแนวความคิดของ \"การทำให้การพิมพ์เรียบง่ายขึ้น\"",
+    "banner_p2" : "กลุ่มวิศวกรที่มีความเยี่ยมยอดใช้เวลา 20 ปีในการพัฒนา",
+
     "Driver_Download": "ดาวน์โหลดไดร์เวอร์",
     "Tharmal_printer_driver": "ไดร์เวอร์เครื่องพิมพ์เทอร์มอล",
     "Applicable_Model1": "รุ่นที่ใช้ได้",
@@ -189,6 +201,11 @@
 
     "welcome-text1": "Jika anda memerlukan bantuan",
     "welcome-text2": "sila hubungi kami tanpa berkecuali",
+
+    "banner_text" : "MENJIMATKAN PENCETAKAN",
+    "banner_p1" :"Pencetak jenama Grozziee bagi merealisasikan konsep \"Menjimatkan Pencetakan\"",
+    "banner_p2" : "Kumpulan jurutera cemerlang mengambil masa 20 tahun",
+
     "Driver_Download": "Muat turun Pemandu",
     "Tharmal_printer_driver": "Pemandu pencetak haba",
     "Applicable_Model1": "Model Berkenaan",
@@ -281,6 +298,11 @@
 
     "welcome-text1": "Kung mayroon kang kailangang tulong",
     "welcome-text2": "Mangyaring huwag mag-atubiling makipag-ugnay sa amin",
+
+    "banner_text" : "Papadaliin Imprenta",
+    "banner_p1" :"Pinters ng Grozziee na may maisakatuparan ang konsepto ng \"Papadaliin Imprenta\"",
+    "banner_p2" : "Isang grupo ng mga magagaling na inhinyero ang naglaan ng 20 taon",
+
     "Driver_Download": "Pag-download ng Driver",
     "Tharmal_printer_driver": "Driver ng thermal printer",
     "Applicable_Model1": "Naaangkop na Modelo",
@@ -375,6 +397,11 @@
 
     "welcome-text1": "Nếu bạn cần trợ giúp",
     "welcome-text2": "Vui lòng liên hệ với chúng tôi",
+
+    "banner_text" : "ĐƠN GIẢN HÓA IN ẤN",
+    "banner_p1" :"Máy in thương hiệu Grozziee nhằm thực hiện khái niệm \"Đơn giản hóa in ấn\"",
+    "banner_p2" : "Một nhóm kỹ sư xuất sắc đã dành 20 năm",
+
     "Driver_Download": "Tải xuống trình điều khiển",
     "Tharmal_printer_driver": "Trình điều khiển máy in nhiệt",
     "Applicable_Model1": "Model áp dụng",

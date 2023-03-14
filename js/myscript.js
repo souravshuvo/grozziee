@@ -148,6 +148,12 @@ var elementsPlay = document.getElementsByClassName("video-link");
 
 const welcomeText1 = document.getElementById("welcome-text1");
 const welcomeText2 = document.getElementById("welcome-text2");
+
+const banner_text = document.getElementById("banner_header");
+const banner_p1 = document.getElementById("banner_p1");
+const banner_p2 = document.getElementById("banner_p2");
+
+
 const Driver_Download = document.getElementById("Driver_Download");
 const Tharmal_printer_driver = document.getElementById(
   "Tharmal_printer_driver"
@@ -337,6 +343,11 @@ axios.get("json/languages.json").then((response) => {
 
   welcomeText1.textContent = languages[selectedLanguage]["welcome-text1"];
   welcomeText2.textContent = languages[selectedLanguage]["welcome-text2"];
+
+  banner_text.textContent=languages[selectedLanguage]["banner_text"];
+  banner_p1.textContent=languages[selectedLanguage]["banner_p1"];
+  banner_p2.textContent=languages[selectedLanguage]["banner_p2"];
+
   Driver_Download.textContent = languages[selectedLanguage]["Driver_Download"];
   Tharmal_printer_driver.textContent =
     languages[selectedLanguage]["Tharmal_printer_driver"];
@@ -581,6 +592,11 @@ languageSelect.addEventListener("change", function () {
 
     welcomeText1.textContent = languages[selectedLanguage]["welcome-text1"];
     welcomeText2.textContent = languages[selectedLanguage]["welcome-text2"];
+
+    banner_text.textContent=languages[selectedLanguage]["banner_text"];
+  banner_p1.textContent=languages[selectedLanguage]["banner_p1"];
+  banner_p2.textContent=languages[selectedLanguage]["banner_p2"];
+  
     Driver_Download.textContent =
       languages[selectedLanguage]["Driver_Download"];
     Tharmal_printer_driver.textContent =

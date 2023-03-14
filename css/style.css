@@ -133,59 +133,87 @@ body {
 
 
 #banner_header {
-  margin-top: 2%;
-  font-size: 5rem;
-  font-weight: bolder;
-  letter-spacing: 0.1rem;
-  text-align: center;
+  
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (max-width: 576px) {
+/* banner header text media */
 
-  
-#banner_header{
-  margin-top: 2%;
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
-
-}
-
-
-
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-  #banner_header{
-    margin-top: 2%;
-    font-size: 1.5rem;
-    letter-spacing: 0.08rem;
-  
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .display-1 {
+    font-size: 5rem;
   }
 }
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .display-1 {
+    font-size: 3rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .display-1 {
+    font-size: 2rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 767px) {
+  .display-1 {
+    font-size: 1rem;
+  }
+}
+
+
+/* Banner paragraph text media */
+
+/* banner header text media */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .display-6 {
+    font-size: 2rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .display-6 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .display-6 {
+    font-size: 0.6rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 767px) {
+  .display-6 {
+    font-size: 0.3rem;
+  }
+}
+
 
 #banner_p1 {
-  font-weight: lighter;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
-  font-size: 2rem;
-  letter-spacing: 0.005rem;
-  font-family: "Tahoma", sans-serif;
+  
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma", sans-serif; 
 }
 
-@media only screen and (max-width: 576px){
+#banner_p2 {
+  
 
-  #banner_p1 {
-    
-    margin-left: 2%;
-    margin-right: 2%;
-    font-size: 0.5rem;
-    letter-spacing: 0.0005rem;
-    
-  }
-
+  font-family: "Tahoma", sans-serif; 
 }
 
 
